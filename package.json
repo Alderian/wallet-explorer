@@ -1,23 +1,45 @@
 {
-	"name": "wallet-explorer-app",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next link",
-		"marketplace": "npx create-web3-dapp marketplace"
-	},
-	"dependencies": {
-		"next": "13.1.6",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"alchemy-sdk": "^2.4.3",
-		"@rainbow-me/rainbowkit": "^0.11.0"
-	},
-	"devDependencies": {
-		"eslint": "8.34.0",
-		"eslint-config-next": "13.1.6"
-	}
+  "name": "wallet-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alderian/wallet-explorer.git"
+  },
+  "author": "Alderian Annatar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alderian/wallet-explorer/issues"
+  },
+  "homepage": "https://github.com/Alderian/wallet-explorer#readme",
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.11.0",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "alchemy-sdk": "^2.4.3",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  }
 }

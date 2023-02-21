@@ -1,4 +1,5 @@
-import styles from "../styles/InstructionsComponent.module.css";
+import styles from '@/styles/InstructionsComponent.module.css';
+import Image from 'next/image';
 
 export default function InstructionsComponent() {
   return (
@@ -13,45 +14,42 @@ export default function InstructionsComponent() {
       <div className={styles.instructions_container}>
         <div className={styles.box}>
           <a
-            target={"_blank"}
-            href="https://github.com/alchemyplatform/create-web3-dapp"
+            target={'_blank'}
+            rel='noreferrer'
+            href='https://github.com/alchemyplatform/create-web3-dapp'
           >
             {`Start by deleting the instructions component in the pages/index.jsx file`}
           </a>
         </div>
         <div className={styles.panels_container}>
           <div className={styles.panel}>
-            <div style={{flexGrow:1}}>
+            <div style={{ flexGrow: 1 }}>
               <h3>First of all, the docs:</h3>
-              <p>
-                Learn how to use create-web3-dapp to create and build your dapps
-                in minutes
-              </p>
+              <p>Learn how to use create-web3-dapp to create and build your dapps in minutes</p>
             </div>
 
             <div className={styles.button_container}>
               <a
                 className={styles.button}
-                target={"_blank"}
-                href="https://docs.alchemy.com"
+                target={'_blank'}
+                rel='noreferrer'
+                href='https://docs.alchemy.com'
               >
                 Read the docs →
               </a>
             </div>
           </div>
           <div className={styles.panel}>
-            <div style={{flexGrow:1}}>
+            <div style={{ flexGrow: 1 }}>
               <h3>Production ready web3 components library</h3>
-              <p>
-                Copy and paste pre-built production ready web3 components into
-                your dapp
-              </p>
+              <p>Copy and paste pre-built production ready web3 components into your dapp</p>
             </div>
             <div className={styles.button_container}>
               <a
                 className={styles.button}
-                target={"_blank"}
-                href="https://createweb3dapp.com"
+                target={'_blank'}
+                rel='noreferrer'
+                href='https://createweb3dapp.com'
               >
                 Go to the marketplace →
               </a>
@@ -66,12 +64,10 @@ export default function InstructionsComponent() {
 
           <div className={styles.templates_container}>
             <div className={styles.template_container}>
-              <img src="https://via.placeholder.com/300"></img>
+              <Image alt='' width='300' height='300' src='https://via.placeholder.com/300' />
               <div className={styles.template_text_container}>
                 <h3>NFTs Gallery</h3>
-                <p>
-                  A dapp to search and display NFTs, and collections information{" "}
-                </p>
+                <p>A dapp to search and display NFTs, and collections information </p>
               </div>
               <div className={styles.code_block}>
                 <p>npx create-web3-dapp@latest nft-gallery</p>
@@ -79,22 +75,16 @@ export default function InstructionsComponent() {
             </div>
 
             <div className={styles.template_container}>
-              <img src="https://via.placeholder.com/300"></img>
+              <Image alt='' width='300' height='300' src='https://via.placeholder.com/300' />
               <div className={styles.template_text_container}>
                 <h3>Buy me a coffee</h3>
-                <p>
-                  A dapp to search and display NFTs, and collections information{" "}
-                </p>
+                <p>A dapp to search and display NFTs, and collections information </p>
               </div>
               <div
                 onClick={() => {
-                  navigator.clipboard
-                    .writeText("npx create-web3-dapp@latest TBD")
-                    .then(() => {
-                      alert(
-                        "Command copied to your clipboard. Paste it in your terminal!"
-                      );
-                    });
+                  navigator.clipboard.writeText('npx create-web3-dapp@latest TBD').then(() => {
+                    alert('Command copied to your clipboard. Paste it in your terminal!');
+                  });
                 }}
                 className={styles.code_block}
               >
@@ -102,12 +92,10 @@ export default function InstructionsComponent() {
               </div>
             </div>
             <div className={styles.template_container}>
-              <img src="https://via.placeholder.com/300"></img>
+              <Image alt='' width='300' height='300' src='https://via.placeholder.com/300' />
               <div className={styles.template_text_container}>
                 <h3>Block Explorer</h3>
-                <p>
-                  A dapp to search and display NFTs, and collections information{" "}
-                </p>
+                <p>A dapp to search and display NFTs, and collections information </p>
               </div>
               <div className={styles.code_block}>
                 <p>npx create-web3-dapp@latest block-explorer</p>
@@ -120,14 +108,15 @@ export default function InstructionsComponent() {
           <div>
             <h3>Earn your free web3 degree</h3>
             <p>
-              Kickstart your web3 career learning from the same bootcamp that
-              taught more than 50.000 web3 developers
+              Kickstart your web3 career learning from the same bootcamp that taught more than
+              50.000 web3 developers
             </p>
             <div className={styles.button_container_centered}>
               <a
                 className={styles.button}
-                target={"_blank"}
-                href="https://university.alchemy.com"
+                target={'_blank'}
+                rel='noreferrer'
+                href='https://university.alchemy.com'
               >
                 Got to Alchemy University →
               </a>
